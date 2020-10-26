@@ -17,6 +17,7 @@ const user1 = new UserCreator('Phil', 5);
 
 user1.increment();
 
+// extends sets prototype of 'this' object to PaidUserCreator, also sets prototype of PaidUserCreator to UserCreator
 class PaidUserCreator extends UserCreator {
 	constructor(paidName, paidScore, accountBalance) {
 		// calls base object constructor and sets 'this' equal to value returned
